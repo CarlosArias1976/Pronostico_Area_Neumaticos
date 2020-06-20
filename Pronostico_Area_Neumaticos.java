@@ -1,15 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/*Constructores con parametros aplicados a redes neuronales*/
+/*Pronostico del area de contacto de los neumaticos de un vehiculo via redes neuronales
+recurrentes. */
+                                                                                                                                                                                                                                                                                                          
 package pronostico_area_neumaticos;
 
 /**
  *
- * @author Carlos Areas
+ * @author Carlos Arias
  */
-class Area_Neumatico{
+class Area_Neumaticos{
 //Atributos
     private int neumatico;
     private int acelerometro;
@@ -17,7 +16,7 @@ class Area_Neumatico{
     private String suspensionactiva;
     
 //Constructores
-    public Area_Neumatico(int pneumatico, int pacelerometro, String psensorflexion, String psuspensionactiva){
+    public Area_Neumaticos(int pneumatico, int pacelerometro, String psensorflexion, String psuspensionactiva){
     neumatico=pneumatico;
     acelerometro=pacelerometro;
     sensorflexion=psensorflexion;
@@ -62,8 +61,8 @@ public class Pronostico_Area_Neumaticos {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Area_Neumatico neumatico1=new Area_Neumatico(240,33,"Area de contacto","Predice");
-        Area_Neumatico neumatico2=new Area_Neumatico(255,32,"Area de contacto","Predice");
+        Area_Neumaticos neumatico1=new Area_Neumaticos(240,33,"Area de contacto","Predice");
+        Area_Neumaticos neumatico2=new Area_Neumaticos(255,32,"Area de contacto","Predice");
         System.out.println(neumatico1.toString());
         System.out.println(neumatico2.toString());
         neumatico1.setneumatico(270);
